@@ -22,7 +22,6 @@ phone = input("Enter iPhone number: ")
 text_to_translate = input("Enter text message: ")
 url_encoded = urllib.parse.quote(text_to_translate)
 url = "http://api.funtranslations.com/translate/yoda?text=" + url_encoded
-print(phone)
 
 x = requests.get(url);
 dict = x.json()
