@@ -18,6 +18,7 @@ err_message = "Too Many Requests: Rate limit of 5 requests per hour exceeded"
 
 
 phone = input("Enter iPhone number: ")
+
 text_to_translate = input("Enter text message: ")
 url_encoded = urllib.parse.quote(text_to_translate)
 url = "http://api.funtranslations.com/translate/yoda?text=" + url_encoded
@@ -31,7 +32,6 @@ if("error" in dict):
 else:
     translated = dict["contents"]["translated"]
     guid = imessage.send(phone, translated)
-
 
 
 #if not imessage.check_compatibility(phone):
