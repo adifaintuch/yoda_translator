@@ -8,3 +8,9 @@
 ### 3. Run the command 'python main.py' in terminal
 
 
+![](in_terminal.png)
+
+![](text_sent.png)
+
+### The web API allows for only 3 requests per hour, so if you exceed the limit you will get a message like this:
+![](too_many_requests.png)
